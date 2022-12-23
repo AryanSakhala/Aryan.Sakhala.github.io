@@ -19,7 +19,7 @@
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			transition: 0.3s;
-			width: 40%;
+			width: 30%;
 		}
 
 		.card:hover {
@@ -28,6 +28,50 @@
 
 		.container {
 			padding: 2px 16px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* Float four columns side by side */
+		.column {
+			float: right;
+			width: 25%;
+			padding: 10 10px;
+		}
+
+		/* Remove extra left and right margins, due to padding */
+		.row {
+			margin: 0 -15px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive columns */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+
+		/* Style the counter cards */
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			padding: 16px;
+			text-align: center;
+			background-color: #f1f1f1;
 		}
 	</style>
 </head>
@@ -55,11 +99,7 @@
 
 		<!-- Nav -->
 		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">Introduction</a></li>
-				<!-- <li><a href="generic.html">Experience</a></li> -->
-				<li><a href="elements.html">Acheivement and Skills</a></li>
-			</ul>
+
 			<ul class="icons">
 
 				<ul class="icons alt">
@@ -174,27 +214,27 @@
 						<li>Data Science - <strong>★★★☆☆</strong></li>
 					</h3>
 
-					<hr />
+
 					<h3>
 						<li>Deep Learning - <strong>★★★★☆</strong></li>
 					</h3>
-					<hr />
+
 					<h3>
 						<li>Computer Vision - <strong>★★★☆☆</strong></li>
 					</h3>
-					<hr />
+
 					<h3>
 						<li>Blockchain Development - <strong>★★★☆☆</strong></li>
 					</h3>
-					<hr />
+
 					<h3>
 						<li>API - <strong>★★☆☆☆</strong></li>
 					</h3>
-					<hr />
+
 					<h3>
 						<li>SQL - <strong>★★☆☆☆</strong></li>
 					</h3>
-					<hr />
+
 					<header>
 						<header class="major">
 							<h2 style="font-weight: 800;">Position of Responsibility
@@ -242,22 +282,66 @@
 						Gokhale CA firm</blockquote>
 
 					<hr />
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li><a href="https://www.youtube.com/channel/UCU7YI6qT_RO-ujpr-r_uxWA"
-									class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-							<li><a href="https://www.linkedin.com/in/aryan-sakhala-990b46176/"
-									class="icon brands alt fa-linkedin"><span class="label">Linked In</span></a>
-							</li>
-							<li><a href="https://github.com/AryanSakhala" class="icon brands alt fa-github"><span
-										class="label">GitHub</span></a></li>
-						</ul>
-					</section>
+					
+
+					<h2>My Video Gallery</h2>
+
+					<ul class="row">
+						<div class="card">
+							<a href="https://youtu.be/uxIHguw5AWQ" target="_blank">
+								<img src="images/IPFS.jpg" alt="Avatar" style="width:100%">
+							</a>
+							<div class="container">
+								<h4><b>IPFS</b></h4>
+
+							</div>
+						</div>
+						<div></div>
+						<div></div>
+						<div class="card">
+							<a href="https://youtu.be/OuseStdsv8s" target="_blank">
+								<img src="images/mqdefault.jpg" alt="Avatar" style="width:100%">
+							</a>
+							<div class="container">
+								<h4><b>VGG 19 Project</b></h4>
+
+							</div>
+						</div>
+						<div></div>
+						<div></div>
+						<div class="card">
+							<a href="https://youtu.be/RqMz3g8RHvo" target="_blank">
+								<img src="images/cm.png" alt="Avatar" style="width:100%">
+							</a>
+							<div class="container">
+								<h4><b>Confusion Matrix</b></h4>
+
+							</div>
+						</div>
+
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.youtube.com/channel/UCU7YI6qT_RO-ujpr-r_uxWA" class="icon brands alt fa-youtube"><span
+											class="label">Youtube</span></a></li>
+								<li><a href="https://www.linkedin.com/in/aryan-sakhala-990b46176/" class="icon brands alt fa-linkedin"><span
+											class="label">Linked In</span></a>
+								</li>
+								<li><a href="https://github.com/AryanSakhala" class="icon brands alt fa-github"><span
+											class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+
+
+
+
+
+
 
 
 
 			</div>
+
 
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -272,7 +356,7 @@
 			<!-- Footer -->
 			<footer id="footer">
 
-				<section class="split contact">
+				<section class="row">
 
 					<section>
 						<h3>Phone</h3>
@@ -282,18 +366,7 @@
 						<h3>Email</h3>
 						<p><a href="#">ryansakhala@gmail.com</a></p>
 					</section>
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li><a href="https://www.youtube.com/channel/UCU7YI6qT_RO-ujpr-r_uxWA"
-									class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-							<li><a href="https://www.linkedin.com/in/aryan-sakhala-990b46176/"
-									class="icon brands alt fa-linkedin"><span class="label">Linked In</span></a>
-							</li>
-							<li><a href="https://github.com/AryanSakhala" class="icon brands alt fa-github"><span
-										class="label">GitHub</span></a></li>
-						</ul>
-					</section>
+					
 				</section>
 			</footer>
 
