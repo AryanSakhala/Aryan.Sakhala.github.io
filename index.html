@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images\Aryan.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -65,15 +66,20 @@
 				display: block;
 				margin-bottom: 20px;
 			}
+			@media screen and (max-width: 600px) {
+				.card {
+				   width: 100%;
+				}
 		}
 
 		/* Style the counter cards */
-		.card {
+	/*	.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			padding: 16px;
 			text-align: center;
 			background-color: #f1f1f1;
 		}
+		*/
 	</style>
 </head>
 
@@ -92,8 +98,6 @@
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
 		</div>
-
-
 
 		<!-- Header -->
 		<header id="header">
@@ -137,17 +141,11 @@
 
 
 			</article>
-			<!-- <header class="major">
-				<a href="Aryan Sakhala Resume.pdf">
-					<h2>Resume</h2>
-					<i class="fa fa-file" style="font-size:36px;"></i>
-				</a>
-			</header> -->
 
 			
 
 			<header class="major">
-				<h1 style="font-weight: 600;">Projects And <a href="Aryan Sakhala Resume.pdf">
+			<h1 style="font-weight: 600;">Projects And <a href="Aryan Sakhala Resume.pdf">
 					<h1 style="font-weight: 600;">Resume
 					<i class="fa fa-file" style="font-size:36px;"></i>
 					</a></h1>
@@ -156,7 +154,7 @@
 					<a href="https://bgg7ri-aryan-sakhala.shinyapps.io/portfolio/" target="_blank">
 						<img src="images/download.png" alt="Avatar" style="width:100%">
 					</a>
-					<div class="container">
+					<div class="container ">
 						<h4><b>Google Play Store</b></h4>
 						<p>Analysis of Google Play Store Apps with help of R + Shiny Board.</p>
 					</div>
