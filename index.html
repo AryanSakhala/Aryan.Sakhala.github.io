@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aryan Sakhala - Portfolio</title>
+  
+  <!-- Bootstrap and Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,6 +23,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#jobs">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#internships">Internships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -30,96 +36,144 @@
 
   <!-- Home Section -->
   <section id="home" class="text-center text-light bg-dark d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div>
-      <h1 class="display-4">Aryan Sakhala</h1>
-      <p class="lead">Software Engineer | Machine Learning | Deep Learning Researcher</p>
-      <a href="#about" class="btn btn-outline-light">Learn More</a>
+    <div class="home-content">
+      <h1 class="display-4 fw-bold">Aryan Sakhala</h1>
+      <p class="lead">Software Engineer | Machine Learning Specialist | Gen AI Enthusiast</p>
+      <a href="#about" class="btn btn-outline-light btn-lg">Explore</a>
     </div>
   </section>
 
   <!-- About Me Section -->
   <section id="about" class="py-5">
     <div class="container">
-      <h2 class="text-center">About Me</h2>
-      <p class="lead text-center">I am a Software Engineer at Metrum AI, specializing in RAG & Gen AI.</p>
-      <p class="text-center">With a Bachelor of Engineering degree in Computer Engineering and certifications in Data Science, Networking, and Programming, I possess a strong foundation in software engineering and data science. I am driven by curiosity, creativity, and the desire to make an impact through data science and deep learning.</p>
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Profile Picture">
+        </div>
+        <div class="col-lg-8">
+          <p class="lead">I am Aryan Sakhala, a passionate Software Engineer working at Metrum AI in Bengaluru, India. I hold a Bachelor of Engineering degree in Computer Engineering and am deeply involved in the areas of machine learning, deep learning, and artificial intelligence.</p>
+          <p class="lead">With a focus on Gen AI, RAG, and developing cutting-edge solutions, I have also contributed as a Research Associate and published papers in renowned journals.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-5 bg-light">
+  <!-- Experience Section -->
+  <section id="jobs" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center">Portfolio</h2>
+      <h2 class="text-center mb-4">Experience</h2>
       <div class="row">
-        <!-- Project 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Project 1">
+        <!-- Job 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Deep Learning Project</h5>
-              <p class="card-text">Developed algorithms to improve interview platforms.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Learn More</a>
+              <h5 class="card-title">Software Engineer, Metrum AI</h5>
+              <h6 class="card-subtitle mb-2 text-muted">August 2024 - Present | Bengaluru, India</h6>
+              <p class="card-text">Currently working on RAG and Gen AI projects, developing AI-powered solutions to improve system scalability and efficiency.</p>
             </div>
           </div>
         </div>
-        <!-- Project Modal 1 -->
-        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="projectModalLabel1">Deep Learning Project</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                Worked with a team of experts to develop and improve deep learning models for an AI-based interview platform using Python, Machine Learning, and SQL.
-              </div>
+        <!-- Job 2 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Research Associate, Vidyashilp University</h5>
+              <h6 class="card-subtitle mb-2 text-muted">July 2023 - May 2024 | Bengaluru, India</h6>
+              <p class="card-text">Conducted deep learning research, publishing papers in prestigious journals, and advancing the field through innovative solutions.</p>
             </div>
           </div>
         </div>
-        <!-- Add more projects here as needed -->
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5">
+  <!-- Internships Section -->
+  <section id="internships" class="py-5">
     <div class="container">
-      <h2 class="text-center">Skills</h2>
+      <h2 class="text-center mb-4">Internships</h2>
       <div class="row">
-        <div class="col-md-6">
-          <h5>Machine Learning</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">90%</div>
-          </div>
-          <h5>Python</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 95%;">95%</div>
+        <!-- Internship 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Deep Learning Intern, Metrum AI</h5>
+              <h6 class="card-subtitle mb-2 text-muted">May 2024 - August 2024 | Bengaluru, India</h6>
+              <p class="card-text">Developed and improved deep learning algorithms, enhancing the accuracy and scalability of AI systems used in various projects.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h5>Presentation Skills</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;">85%</div>
+        <!-- Internship 2 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning Intern, R3</h5>
+              <h6 class="card-subtitle mb-2 text-muted">January 2021 - July 2021 | Nashik, India</h6>
+              <p class="card-text">Contributed to machine learning projects, applying algorithms to analyze large datasets and derive actionable insights.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-dark text-light">
-    <div class="container text-center">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ryansakhala@gmail.com" class="text-light">ryansakhala@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aryansakhala-990b46176" target="_blank" class="text-light">LinkedIn Profile</a></p>
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <div class="row">
+        <!-- Education 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Dr. D.Y. Patil Institute of Engineering, Management and Research</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bachelor of Engineering in Computer Engineering | 2019 - 2023</h6>
+              <p class="card-text">Acquired strong foundations in software development, data science, and networking. Completed numerous projects and led research initiatives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Certifications</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">SQL for Data Science</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Programming for Everybody (Python)</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Python Data Structures</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-center text-light py-3">
-    <p>&copy; 2024 Aryan Sakhala. All rights reserved.</p>
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Aryan Sakhala | All Rights Reserved</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
