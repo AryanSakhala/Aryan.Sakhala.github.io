@@ -1,92 +1,64 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+  a {
+    color: #08630b;
+    text-decoration: none;
   }
   
-  p {
-    font-size: 1.1rem;
+  a:hover {
+    text-decoration: underline;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  /* Navbar Styles */
+  /* Navbar */
   .navbar {
-    background-color: #343a40;
-    transition: background-color 0.3s ease;
+    background-color: #1c1c1c;
   }
   
-  .navbar a.nav-link {
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
+  .nav-link {
+    color: #e0e0e0 !important;
   }
   
-  .navbar a.nav-link:hover {
-    color: #f39c12;
+  .nav-link:hover {
+    color: #08630b !important;
   }
   
   /* Home Section */
   #home {
-    background-image: url('https://via.placeholder.com/1920x1080');
-    background-size: cover;
-    background-position: center;
-    color: white;
     height: 100vh;
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
   }
   
-  #home h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  #home p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    animation: fadeInUp 1.5s ease-in-out;
-  }
-  
-  #home a.btn {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    background-color: #f39c12;
+  #home .btn-custom {
+    background-color: #08630b;
+    color: #ffffff;
     border: none;
-    color: white;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
   }
   
-  #home a.btn:hover {
-    background-color: #e67e22;
+  #home .btn-custom:hover {
+    background-color: #08630b;
   }
   
   /* About Section */
-  #about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+  #about {
+    background-color: #1f1f1f;
   }
   
-  #about img:hover {
-    transform: scale(1.1);
+  #about .lead {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   #about p {
@@ -94,148 +66,76 @@ body {
     line-height: 1.7;
   }
   
-  #about .lead {
-    font-size: 1.2rem;
-    color: #7f8c8d;
+  /* Experience Section */
+  #experience .card {
+    background-color: #2c2c2c;
   }
   
-  /* Cards Section (Experience, Internships, etc.) */
-  .card {
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  #experience .card-title {
+    color: #e0e0e0;
   }
   
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-title {
-    font-size: 1.3rem;
-    color: #2c3e50;
-  }
-  
-  .card-subtitle {
-    font-size: 1rem;
-    color: #7f8c8d;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    color: #34495e;
-  }
-  
-  /* Button Styling */
-  .btn-custom {
-    background-color: #f39c12;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 50px;
-  }
-  
-  .btn-custom:hover {
-    background-color: #e67e22;
-    transform: translateY(-5px);
+  #experience .card-subtitle {
+    color: #a0a0a0;
   }
   
   /* Education Section */
   #education .card {
-    background-color: #fff;
-    border-left: 5px solid #f39c12;
+    background-color: #2c2c2c;
   }
   
   #education .card-title {
-    font-weight: 700;
+    color: #e0e0e0;
   }
   
-  #education .card-text {
-    font-size: 1.1rem;
-    color: #7f8c8d;
+  #education .card-subtitle {
+    color: #a0a0a0;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #1f1f1f;
+  }
+  
+  #skills i {
+    color: #08630b;
+  }
+  
+  #skills h5 {
+    margin-top: 10px;
+    color: #e0e0e0;
   }
   
   /* Certifications Section */
-  #certifications .card {
-    border: 1px solid #f39c12;
+  #certifications {
+    background-color: #1f1f1f;
   }
   
-  #certifications .card-title {
-    font-weight: 600;
+  #certifications ul {
+    list-style-type: none;
+    padding: 0;
   }
   
-  #certifications .card-body {
+  #certifications li {
     font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #2c2c2c;
+  }
+  
+  #contact a {
+    color: #08630b;
   }
   
   /* Footer */
   footer {
-    background-color: #333;
-    padding: 20px 0;
-    color: #eee;
+    background-color: #1c1c1c;
   }
   
   footer p {
     margin: 0;
-    font-size: 1rem;
-  }
-  
-  footer a {
-    color: #f39c12;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #e67e22;
-  }
-  
-  /* Scroll Animations */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Smooth Scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Responsive Media Queries */
-  @media (max-width: 768px) {
-    #home h1 {
-      font-size: 2.5rem;
-    }
-  
-    #home p {
-      font-size: 1.2rem;
-    }
-  
-    #home a.btn {
-      padding: 10px 20px;
-      font-size: 1rem;
-    }
-  
-    #about .lead {
-      font-size: 1rem;
-    }
   }
   
