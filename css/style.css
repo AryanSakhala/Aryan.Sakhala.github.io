@@ -1,106 +1,241 @@
-/* style.css */
-
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
-  --accent-color: #e74c3c;
-  --text-color: #333;
-  --light-bg: #ecf0f1;
-  --dark-bg: #34495e;
-}
-
+/* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-/* Hero section styling */
-#home {
-  background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* General Text Styling */
-h2 {
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: var(--secondary-color);
-  position: relative;
-  padding-bottom: 10px;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: var(--accent-color);
-}
-
-.lead {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: var(--secondary-color);
-}
-
-/* Skills Progress Bar */
-.progress {
-  height: 25px;
-  background-color: var(--light-bg);
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  font-size: 0.9rem;
-  line-height: 25px;
-  padding: 0 10px;
-  background-color: var(--primary-color);
-  transition: width 0.6s ease;
-}
-
-/* Contact Section Links */
-#contact {
-  background-color: var(--dark-bg);
-}
-
-#contact a {
-  text-decoration: none;
-  color: #ecf0f1;
-  transition: color 0.3s ease;
-}
-
-#contact a:hover {
-  color: var(--accent-color);
-}
-
-/* Footer */
-footer {
-  background-color: var(--secondary-color);
-  color: #ecf0f1;
-  padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
   }
   
-  .lead {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  
+  p {
     font-size: 1.1rem;
   }
-}
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #343a40;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a.nav-link {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a.nav-link:hover {
+    color: #f39c12;
+  }
+  
+  /* Home Section */
+  #home {
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  #home p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  #home a.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #home a.btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* About Section */
+  #about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  #about img:hover {
+    transform: scale(1.1);
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  #about .lead {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Cards Section (Experience, Internships, etc.) */
+  .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  /* Button Styling */
+  .btn-custom {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px;
+  }
+  
+  .btn-custom:hover {
+    background-color: #e67e22;
+    transform: translateY(-5px);
+  }
+  
+  /* Education Section */
+  #education .card {
+    background-color: #fff;
+    border-left: 5px solid #f39c12;
+  }
+  
+  #education .card-title {
+    font-weight: 700;
+  }
+  
+  #education .card-text {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Certifications Section */
+  #certifications .card {
+    border: 1px solid #f39c12;
+  }
+  
+  #certifications .card-title {
+    font-weight: 600;
+  }
+  
+  #certifications .card-body {
+    font-size: 1.1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #eee;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #e67e22;
+  }
+  
+  /* Scroll Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2.5rem;
+    }
+  
+    #home p {
+      font-size: 1.2rem;
+    }
+  
+    #home a.btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    #about .lead {
+      font-size: 1rem;
+    }
+  }
+  
